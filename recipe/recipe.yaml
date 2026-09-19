@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.2"
+  version: "0.2.0"
   python_min: "3.12"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/ptgp/ptgp-${{ version }}.tar.gz
-  sha256: 47193b3745568e8d1260e2cf890c88e8693ca64c40529a04aa560b94b3c3a1ee
+  sha256: 05d740213b66ecb49c6038e0ae369267b0d8f260af64d58a3b7eb552f94055f3
 
 build:
   number: 0
@@ -26,8 +26,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy
-    - pymc >=6.2.0,<6.3
-    - pytensor >=3.2.3,<3.3
+    - pymc >=6.3,<6.4
+    - pytensor >=3.3,<3.4
 
 tests:
   - python:
